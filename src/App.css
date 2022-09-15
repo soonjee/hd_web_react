@@ -513,3 +513,109 @@ width: 1300px;
   width: 400px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
 }
+
+/* .Solution */
+.Solution { background: var(--lc); }
+.Solution .container { position: relative; }
+.Solution .box {
+  position: absolute;
+  width: 300px;
+  padding: 50px 40px;
+  bottom: -100px;
+  left: 50%;
+  margin: 0 0 0 -600px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+  background: #fff;
+}
+
+.Solution .box::after {
+  content: "";
+  position: absolute;
+  top: 60px;
+  left: -20px;
+  width: 40px;
+  height: 2px;
+  background: var(--mc);
+}
+.Solution .box .tit {
+  font-size: 21px;
+  font-weight: 500;
+  margin: 0 0 20px 0;
+}
+
+.Solution .box p {
+  font-size: 15px;
+  font-weight: 200;
+  margin: 0 0 20px 0;
+  word-break: keep-all;
+}
+
+.Solution .num {
+  font-size: 40px;
+  font-weight: 500;
+  color: var(--dc);
+}
+
+.Solution .arrows i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  color: var(--lc);
+  padding: 20px 30px;
+  background: rgba(0, 0, 0, 0.2);
+}
+.Solution .arrows i:nth-child(1) {
+  margin: 0 0 0 -600px;
+}
+.Solution .arrows i:nth-child(2) {
+  margin: 0 0 0 600px;
+}
+
+.Solution .dots {
+  text-align: center;
+  font-size: 0;
+  height: 30px;
+}
+
+.Solution .dots li {
+  display: inline-block;
+  width: 4px;
+  height: 10px;
+  background: var(--gc);
+  margin: 10px;
+  vertical-align: middle;
+  transform: 0.5s;
+}
+
+.Solution .dots li.on {
+  height: 30px;
+  background: var(--mc);
+}
+
+.Solution .box .content {
+  margin: 0 0 40px 0;
+}
+
+.Solution .solution_slide figure { width: 1200px; filter: grayscale(1) brightness(1.5); transition: 0.5s;}
+.Solution .solution_slide figure.on { width: 1200px; filter: grayscale(0) brightness(1); transition: 0.5s;}
+.Solution .solution_slide figure  img { margin: 0 auto; }
+
+/* Promotion */
+.Promotion { background: url(../public/assets/img/section4_bg.jpg) no-repeat left bottom; }
+
+.Promotion .movie {
+ position: relative;
+ width: 800px;
+ height: 450px;
+ margin: 0 auto;
+}
+
+.Promotion .movie .u {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
