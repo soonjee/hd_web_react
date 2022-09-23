@@ -27,7 +27,7 @@ const Solution = () => {
                 <Slider
                     centerMode={true}
                     centerPadding={'300px'}
-                    afterChange={index => console.log(index)}
+                    afterChange={index => setSlideNum(index)}
                     arrows={false}
                     ref={SLIDE}
                     className={'solution_slide'}
@@ -57,7 +57,7 @@ const Solution = () => {
                     <i className='xi-arrow-left' onClick={() => SLIDE.current.slickPrev()}></i>
                     <i className='xi-arrow-right' onClick={() => SLIDE.current.slickNext()}></i>
                 </div>
-                <div className="dots">
+                <ul className="dots">
                     {
                         SOLUTION.map((dot, idx) => <li
                             key={dot.id}
@@ -67,7 +67,7 @@ const Solution = () => {
                             {dot.id}
                         </li>)
                     }
-                </div>
+                </ul>
             </div>
         </section>
     )
